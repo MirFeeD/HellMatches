@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Спички</title>
+</head>
+<body>
+
+
+    <h1>Игра Спички</h1>
+    <span id="num" class="test"></span>
+    <h3>Ход оппонента:</h3>
+    <input type="number" max="3" id="human">
+    <button type="submit">ок</button>
+    <button type="submit" id="save" onclick="func1()">Save</button>
+    <p id="text">123</p>
+    <div class="input-resp">
+        
+
+        </div>
+
+    <script>    
+
+    var total = 20;
+
+    const func1 = () => {
+    var name = document.getElementById("human").value;
+    var result = Number(total) - Number(name);
+    console.log(`Число: ${name}`)
+    console.log(`Число: ${result}`)
+    
+    document.getElementById("num").innerHTML = result;
+    }
+    
+    
+    
+    </script>
+
+    
+</body>
+</html>
